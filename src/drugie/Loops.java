@@ -10,6 +10,7 @@ public class Loops {
            2. wyswietlic tylko parzyste liczby od 1 do n
            3. wyswietlic tylko liczby podzielne przez 3
            4. wyswietlic n liter "a"
+           5. wyswietlic potegi liczb az do n
            *. obliczyc sume n liczb ( 1 + 2 + 3 + 4 + ... )
 
         */
@@ -47,31 +48,42 @@ public class Loops {
         //  4. wyswietlic n liter "a"
 
         System.out.println("zad. 4");
-        int p = scanner.nextInt();
+        n = scanner.nextInt();
 
-        for (int i = 0; i < p; i++) {
-            System.out.println("a");
+        for (int i = 0; i < n; i++) {
+
+                System.out.println("a");
+            }
+
+        // 5. wyświetlić potęgi liczb do n
+        System.out.println("zad. 5");
+        n = scanner.nextInt();
+            for (int i = 1; i <= n; i++) {
+                System.out.println(i + " ^ 2 = " + 8);
+
+            }
+
+
+
+            // *. obliczyc sume n liczb ( 1 + 2 + 3 + 4 + ... )
+
+            System.out.println("zad. *");
+            n = scanner.nextInt();
+            int suma = 0;
+            for (int i = 1; i <= n; i++) {
+                suma += i;
+                System.out.println(suma);
+            }
+
+
+
+
+
+            // forLoopExample();
+
         }
 
-        // *. obliczyc sume n liczb ( 1 + 2 + 3 + 4 + ... )
-
-        System.out.println("zad. *");
-        int r = scanner.nextInt();
-        int suma = 0;
-        for (int i = 1; i <= r; i++) {
-            suma += i;
-
-        }System.out.println(suma);
-
-
-
-
-
-        // forLoopExample();
-
-    }
-
-    private static void forLoopExample() {
+        private static void forLoopExample() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Insert number of elements to multiply");
