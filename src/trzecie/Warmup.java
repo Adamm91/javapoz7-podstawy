@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Warmup {
     public static void main(String[] args) {
 
-        // 1.
-        // wczytac liczbe n
-        // zapytac n razy o liczbe
-        // czy pdzielna przez 2 tp napisac
-        // jak podzielna przez 3 to napisac(tylko 3, a nie 2 i 3)
-        // jak podzielna przez 6 to napisac (tylko 6, a nie 2 i 3 tez)
-
-        // 2.
-        // pobrac n od uzytkownika
-        // pobieracie n liczb
-        // info czy ta liczba byla wieksza od poprzedniej
-
-        // 3. odliczyc sume n parzystych liczb
-
-        // * obliczyc silnie dla n
+//         1.
+//         wczytac liczbe n
+//         zapytac n razy o liczbe
+//         czy pdzielna przez 2 tp napisac
+//         jak podzielna przez 3 to napisac(tylko 3, a nie 2 i 3)
+//         jak podzielna przez 6 to napisac (tylko 6, a nie 2 i 3 tez)
+//
+//         2.
+//         pobrac n od uzytkownika
+//         pobieracie n liczb
+//         info czy ta liczba byla wieksza od poprzedniej
+//
+//         3. odliczyc sume n parzystych liczb
+//
+//         * obliczyc silnie dla n
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("zad. 1");

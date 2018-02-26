@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class warmup {
     public static void main(String[] args) {
 
-        // zad. 1 napisac petle ktora odwraca liczbe np. 12345 -> 54321, 1200 -> 21
-        // zad. 2 wczytujemy n liczb, i sumujemy wszystkie cyfry 123, 456 -> 1+2+3+4+5+6 = 21
-        // zad. 3 pozbyc sie wszystkich 0 z liczby np. 120002 -> 122
+//         zad. 1 napisac petle ktora odwraca liczbe np. 12345 -> 54321, 1200 -> 21
+//         zad. 2 wczytujemy n liczb, i sumujemy wszystkie cyfry 123, 456 -> 1+2+3+4+5+6 = 21
+//         zad. 3 pozbyc sie wszystkich 0 z liczby np. 120002 -> 122
 
 
         // zad. 1 napisac petle ktora odwraca liczbe np. 12345 -> 54321, 1200 -> 21

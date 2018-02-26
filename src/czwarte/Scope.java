@@ -6,24 +6,26 @@ import java.util.Scanner;
 public class Scope {
     public static void main(String[] args) {
 
-        // wypisz kod binarny dla liczby n
         // napisac petle, ktora wyswietli wszystkie male litery 'char'
 
-       // zrobic tablice ktora trzyma imiona
+        // zrobic tablice ktora trzyma imiona
 
 
 
-        // 1. zdefiniowac tablice z kilkoma liczbami. obliczyc sume
-        // 2. zdefiniowac tablice z kilkoma liczbami. obliczyc srednia
-        // 3. zdefiniowac tablice z kilkoma liczbami. obliczyc max i min
-        // 4. zdefiniowac tablice z kilkoma liczbami. obliczyc ilosc elementow do wystapienia liczby ujemnej (7, 5, -4  = 2)
-        // 5. podwoic wartosci w tablicy
-        // 6. utworzyc tablice n elementowa z kolejnych liczb (np. 4 to 1, 2, 3, 4)
-        // 7. utworzyc tablice n elementowa tylko z parzystych liczb (np. 4 to 0, 2, 4, 6)
-        // 8. zapytac usera o rozmiar i utworzyc tablice z liczbami (np 5 - 5, 4, 3, 2, 1)
-        // 9. zapytac usera o rozmiar i umozliwic mu wstawianie elementow (np. 5 - 4, 6, 23, 754 , 214) i oblicz z nich srednia
-        // 10 posortowac tablice rosnoca. Ile jest elementow mniejszych od liczby
+//         1. zdefiniowac tablice z kilkoma liczbami. obliczyc sume
+//         2. zdefiniowac tablice z kilkoma liczbami. obliczyc srednia
+//         3. zdefiniowac tablice z kilkoma liczbami. obliczyc max i min
+//         4. zdefiniowac tablice z kilkoma liczbami. obliczyc ilosc elementow do wystapienia liczby ujemnej (7, 5, -4  = 2)
+//         5. podwoic wartosci w tablicy
+//         6. utworzyc tablice n elementowa z kolejnych liczb (np. 4 to 1, 2, 3, 4)
+//         7. utworzyc tablice n elementowa tylko z parzystych liczb (np. 4 to 0, 2, 4, 6)
+//         8. zapytac usera o rozmiar i utworzyc tablice z liczbami (np 5 - 5, 4, 3, 2, 1)
+//         9. zapytac usera o rozmiar i umozliwic mu wstawianie elementow (np. 5 - 4, 6, 23, 754 , 214) i oblicz z nich srednia
+//         10 posortowac tablice rosnoca. Ile jest elementow mniejszych od liczby
 
+        // binaryCode();
+
+        // wypisz kod binarny dla liczby n
         // 1. zdefiniowac tablice z kilkoma liczbami. obliczyc sume
 
 //        int [] tab1 = {12, 46, 14, 36};
@@ -119,7 +121,6 @@ public class Scope {
 
         // 9. zapytac usera o rozmiar i umozliwic mu wstawianie elementow (np. 5 - 4, 6, 23, 754 , 214) i oblicz z nich srednia
 
-        Scanner scanner = new Scanner(System.in);
 
 //        System.out.println("Insert size of array");
 ////        int sizeOfUserArray = scanner.nextInt();
@@ -138,64 +139,82 @@ public class Scope {
         // 10 posortowac tablice rosnoca. Ile jest elementow mnejszych od liczby
 
 
-        int [] sortedArray = {1,2,3,4,5,6,7,8,9};
-        int searchingNumber = 6;
-        int counterForSearching = 0;
+//        int [] sortedArray = {1,2,3,4,5,6,7,8,9};
+//        int searchingNumber = 6;
+//        int counterForSearching = 0;
+//
+//        while (counterForSearching < sortedArray.length && sortedArray[counterForSearching] != searchingNumber) {
+//            counterForSearching++;
+//
+//        }
+//        System.out.println("We have " + counterForSearching + " numbers smaller than " + searchingNumber);
 
-        while (counterForSearching < sortedArray.length && sortedArray[counterForSearching] != searchingNumber) {
-            counterForSearching++;
 
-        }
-        System.out.println("We have " + counterForSearching + " numbers smaller than " + searchingNumber);
+//    }
+//
+//    private static void StringTabLoop() {
+//        String [] names = {"Jan", "Anna", "Marek"};
+//        for (int i = 0; i < names.length; i++) {
+//            System.out.println(names[i]);
+//        }
+//    }
+//
+//    private static void tab() {
+//        int [] array = {1,2,3,4,5,6};
+//        for (int i = 0; i < array.length; i++) {
+//            System.out.println(array[i]);
+//        }
+//        System.out.println();
+//        int [] emptyArray = new int [10];
+//
+//        emptyArray[5] = 3;
+//        System.out.println(emptyArray[5]);
+//        System.out.println("length: " + emptyArray.length);
+//    }
+
+//    private static void charArray() {
+//        String message = "Hello World";
+//        char [] messageAsCharArray = message.toCharArray();
+//        System.out.println(messageAsCharArray[0]);
+//        System.out.println(messageAsCharArray[1]);
+//        System.out.println(messageAsCharArray[2]);
+//        System.out.println(messageAsCharArray[3]);
+//
+//        System.out.println();
+//        System.out.println();
+//    }
+
+//    private static void charAtoZ() {
+//        char letter = 'a';
+//        for (int i = 0; i <= 122 - 97; i++){
+//            System.out.println((char)(letter + i));
+//        }
+//
+//        for (char i = 'a'; i <= 122; i++) {
+//            System.out.print(i + " ");
+//        }
+//    }
+
+//
 
 
-    }
 
-    private static void StringTabLoop() {
-        String [] names = {"Jan", "Anna", "Marek"};
-        for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i]);
-        }
-    }
-
-    private static void tab() {
-        int [] array = {1,2,3,4,5,6};
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
-        System.out.println();
-        int [] emptyArray = new int [10];
-
-        emptyArray[5] = 3;
-        System.out.println(emptyArray[5]);
-        System.out.println("length: " + emptyArray.length);
-    }
-
-    private static void charArray() {
-        String message = "Hello World";
-        char [] messageAsCharArray = message.toCharArray();
-        System.out.println(messageAsCharArray[0]);
-        System.out.println(messageAsCharArray[1]);
-        System.out.println(messageAsCharArray[2]);
-        System.out.println(messageAsCharArray[3]);
-
-        System.out.println();
-        System.out.println();
-    }
-
-    private static void charAtoZ() {
-        char letter = 'a';
-        for (int i = 0; i <= 122 - 97; i++){
-            System.out.println((char)(letter + i));
-        }
-
-        for (char i = 'a'; i <= 122; i++) {
-            System.out.print(i + " ");
-        }
+//    private static void scope() {
+//        int number = 1500000000;
+//        System.out.println(number + number);
+//
+//        System.out.println("MAX VALUE = " + Integer.MAX_VALUE);
+//        System.out.println("MIN VALUE = " + Integer.MIN_VALUE);
+//
+//        long bigNumber = 3000000000L;
+//        System.out.println("bigNumber = " + bigNumber);
+//        System.out.println("MAX VALUE = " + Long.MAX_VALUE);
+//        System.out.println("MIN VALUE = " + Long.MIN_VALUE);
     }
 
     private static void binaryCode() {
-        int numberToBin = 21;
+        Scanner scanner = new Scanner(System.in);
+        int numberToBin = scanner.nextInt();
         int n = numberToBin;
         int digit = 0;
         int binaryCode = 0;
@@ -210,18 +229,5 @@ public class Scope {
 
         }
         System.out.println(numberToBin + " = " + binaryCode);
-    }
-
-    private static void scope() {
-        int number = 1500000000;
-        System.out.println(number + number);
-
-        System.out.println("MAX VALUE = " + Integer.MAX_VALUE);
-        System.out.println("MIN VALUE = " + Integer.MIN_VALUE);
-
-        long bigNumber = 3000000000L;
-        System.out.println("bigNumber = " + bigNumber);
-        System.out.println("MAX VALUE = " + Long.MAX_VALUE);
-        System.out.println("MIN VALUE = " + Long.MIN_VALUE);
     }
 }
