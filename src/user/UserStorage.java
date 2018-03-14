@@ -1,5 +1,6 @@
 package user;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class UserStorage {
@@ -8,7 +9,7 @@ public class UserStorage {
 
         Scanner scanner = new Scanner(System.in);
         int answer;
-        User [] users = new User[10];
+        User[] users = new User[10];
 
         do {
             menuView();
@@ -29,9 +30,7 @@ public class UserStorage {
                     deleteUser(scanner, users);
                     break;
             }
-            } while (answer != 0);
-
-
+        } while (answer != 0);
 
 
     }
@@ -58,11 +57,11 @@ public class UserStorage {
         System.out.println("0. koniec");
     }
 
-    private static void addUser(Scanner scanner, User [] users) {
+    private static void addUser(Scanner scanner, User[] users) {
         System.out.println("Insert first name");
         String firstName = scanner.nextLine();
         System.out.println("Insert last name");
-        String lastName= scanner.nextLine();
+        String lastName = scanner.nextLine();
         System.out.println("Insert pesel");
         int pesel = scanner.nextInt();
 
@@ -73,14 +72,14 @@ public class UserStorage {
             if (users[i] != null) {
                 i++;
             } else {
-                users [i] = user;
+                users[i] = user;
                 break;
             }
         }
         System.out.println("Dodano pomyslnie");
     }
 
-    private static void deleteUser(Scanner scanner, User [] users) {
+    private static void deleteUser(Scanner scanner, User[] users) {
         System.out.println("Write which pesel to delete");
         int pesel = scanner.nextInt();
         int i = 0;
@@ -98,7 +97,7 @@ public class UserStorage {
         System.out.println("element usuniety");
     }
 
-    private static void showUsers(User [] users) {
+    private static void showUsers(User[] users) {
         for (int i = 0; i < users.length; i++) {
             if (users[i] != null) {
                 System.out.println(users[i]);
@@ -106,9 +105,18 @@ public class UserStorage {
         }
     }
 
-    public static char capitalize (String message) {
-        char c = message.charAt(0);
-        return (c >= 'a' && c <= 'z') ? (char) (c - 32) : c;
+    public static String capitalize(String message) {
+        char[] chars = message.toCharArray();
+        if (chars[0] >= 'a' && chars[0] <= 'z') {
+            chars[0] = (char) (chars[0] - 32);
+        }
+        for (int i = 1; i < chars.length; i++) {
+            if (chars[i] >= 'A' && chars[i] <= 'Z') {
+                chars[i] = (char) (chars[i] + 32);
+            }
+        }
+        String capitalized = new String(chars);
+        return capitalized;
     }
 
 }
